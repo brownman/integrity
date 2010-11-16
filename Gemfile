@@ -29,9 +29,9 @@ gem "bcat", "~>0.5"
 # gem "sinatra-ditties"
 # = IRC
 # gem "shout-bot"
-# = Campfire
-# gem "broach", :git => "git://github.com/Manfred/broach.git"
-# gem "nap", :git => "git://github.com/qrush/nap.git"
+# = AMQP
+# gem "bunny"
+
 
 # = Dependencies for the :dj builder
 # gem "activerecord"
@@ -64,7 +64,6 @@ group :test do
   gem "webrat"
   gem "shout-bot"
   gem "sinatra-ditties"
-  gem "broach", :git => "git://github.com/Manfred/broach.git"
   gem "nap", :git => "git://github.com/qrush/nap.git"
   gem "webmock"
   gem "turn"
