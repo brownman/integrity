@@ -1,0 +1,12 @@
+upstream integrity {
+        server 127.0.0.1:8910;
+        server 127.0.0.1:8911;
+}
+
+server {
+        location / {
+                proxy_pass http://integrity;
+        }
+
+        access_log  /var/log/nginx/integrity.access.log;
+}

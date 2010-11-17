@@ -1,6 +1,6 @@
 ---
 environment: production
-chdir: /usr/home/www-data/integrity
+chdir: /home/integrity/integrity
 address: 127.0.0.1
 port: 8910
 rackup: config.ru

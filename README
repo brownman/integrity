@@ -1,3 +1,24 @@
+This is based on the CI server, Integrity with changes made to simplify
+deployment.
+
+This makes the following assumptions on your environment:
+0) You are running Ubuntu 10.04 LTS on Amazon
+1) You don't have Ruby installed
+2) You have Git installed
+3) The home directory for the server is:
+	/home/integrity/
+4) The software is located in /home/integrity/integrity
+
+
+This software will:
+1) Install ruby and the related libraries (including build-essential)
+2) Install the rubygems-update package through `gem'
+3) Install all the packages required by Integrity to run and install
+4) Install nginx as a reverse proxy
+5) Configure nginx to start on boot
+6) Configure the Ruby server Thin to run 2 servers at boot
+
+
 Integrity — Continuous Integration server
 
 Code  http://github.com/integrity/integrity
