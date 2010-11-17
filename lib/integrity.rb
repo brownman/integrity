@@ -1,3 +1,4 @@
+require "rubygems"
 require "addressable/uri"
 require "sinatra/base"
 require "sinatra/authorization"
