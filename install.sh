@@ -50,7 +50,7 @@ install_integrity() {
     echo "Adding the cleanup script to the crontab."
     
     PWD=`pwd`;
-    "0 * * * * ${PWD}/cleanup.rb" > install/crontab
+    echo "0 * * * * ${PWD}/cleanup.rb" > install/crontab
     crontab install/crontab
 }
 
