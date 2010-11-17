@@ -5,7 +5,7 @@ set -e
 
 echo "" > install/install.log
 echo "Performing local branch"
-git checkout -b deploy v22.3
+git checkout -b deploy v22.4
 
 
 # Install the Apt packages
