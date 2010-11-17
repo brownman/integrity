@@ -2,12 +2,16 @@ This is based on the CI server, Integrity with changes made to simplify
 deployment.
 
 This makes the following assumptions on your environment:
-0) You are running Ubuntu 10.04 LTS on Amazon
+0) You are running Ubuntu 10.04 LTS
 1) You don't have Ruby installed
 2) You have Git installed
-3) The home directory for the server is:
-	/home/integrity/
-4) The software is located in /home/integrity/integrity
+3) You don't have nginx installed
+4) You don't have mysql installed
+5) The home directory for the server is:
+	/home/integrity/ and the software is located at
+	/home/integrity/integrity
+	NOTE: Edit install/thin.yml to change these settings
+
 
 
 This software will:
@@ -16,7 +20,10 @@ This software will:
 3) Install all the packages required by Integrity to run and install
 4) Install nginx as a reverse proxy
 5) Configure nginx to start on boot
+	You can change nginx configuration options in install/nginx_site_integrity
 6) Configure the Ruby server Thin to run 2 servers at boot
+	You can change these configuration options in install/thin.yml
+7) Install mysql-server-5.1
 
 
 Integrity — Continuous Integration server
