@@ -10,7 +10,7 @@ This makes the following assumptions on your environment:
 5) The home directory for the server is:
 	/home/integrity/ and the software is located at
 	/home/integrity/integrity
-	NOTE: Edit install/thin.yml to change these settings
+	NOTE: Edit: install/thin.yml and clean.rb to change these settings.
 
 
 
