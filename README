@@ -26,6 +26,15 @@ This software will:
 7) Install mysql-server-5.1
 
 
+HOW TO INSTALL:
+sudo apt-get install git-core
+git clone git://github.com/nationalfield/integrity.git
+cd integrity
+# Edit install/thin.yml and change the home directory
+# Edit clean.rb to change the build directory
+./install.sh
+
+
 Integrity — Continuous Integration server
 
 Code  http://github.com/integrity/integrity
