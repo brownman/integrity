@@ -47,6 +47,11 @@ install_integrity() {
     sudo bundle install >> install/install.log
     echo "Building the Integrity DB"
     rake db
+    echo "Adding the cleanup script to the crontab."
+    
+    PWD=`pwd`;
+    "0 * * * * ${PWD}/cleanup.rb" > install/crontab
+    crontab install/crontab
 }
 
 # Install the nginx configuration
