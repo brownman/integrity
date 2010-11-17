@@ -71,6 +71,11 @@ install_github_token() {
     echo "Your random GitHub token is: $RANDOMSTRING"
 }
 
+start_services() {
+    sudo /etc/init.d/thin restart
+    sudo /etc/init.d/nginx restart
+}
+
 # Create a random MD5 sum
 random_string() {
     echo `dd if=/dev/urandom  bs=2048 count=100 2> /dev/null | md5sum -b | awk '{print $1}'`
@@ -107,3 +112,6 @@ install_nginx
 
 # Setup the github token
 install_github_token
+
+# Start thin and nginx
+start_services
