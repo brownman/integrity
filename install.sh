@@ -12,7 +12,7 @@ install_apt() {
     sudo apt-get -y install ruby1.8-dev build-essential irb1.8 libreadline-ruby1.8\
                          libreadline5 rdoc1.8 rubygems1.8 libsqlite3-dev sqlite3\
                          libsqlite3-0 libxslt1-dev libxslt1.1 libsqlite3-dev\
-                         libxml2-dev nginx >> install/install.log
+                         libxml2-dev nginx rake >> install/install.log
 }
 
 
