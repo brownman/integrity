@@ -4,6 +4,8 @@
 set -e
 
 echo "" > install/install.log
+echo "Performing local branch"
+git checkout -b deploy v22.3
 
 echo "Installing apt packages"
 sudo apt-get install ruby1.8-dev build-essential irb1.8 libreadline-ruby1.8\
